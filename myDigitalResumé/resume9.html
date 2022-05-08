@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Link Below-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./CSS/stylesheet.css">    
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>My Digital Resumé</title>
 </head>
-<body class="body-container">
-
-    <header class="heading">
-        <aside>
-            <!-- <img src="https://via.placeholder.com/300x200" alt="profileImage" width="300" height="200"> -->
-            <img id="profileImage" src="../myDigitalResumé/Images/profilePicture.JPG" alt="profileImage" width="150" height="150">
-        </aside>
-            <h1>Gareth Williams</h1>
-            <p>Web Designer & Developer</p>       
-    </header>
-
+<body class="mt-2 body-container">
+    <div class="container-fluid">
+        <header class="heading">
+            <aside>
+                <img id="profileImage" src="../myDigitalResumé/Images/profilePicture.JPG" alt="profileImage" width="150" height="150">
+            </aside>
+                <h1>Gareth Williams</h1>
+                <p>Web Designer & Developer</p>       
+        </header>
+    </div>
 
     <!-- menu information below -->
-    <main class="main">       
+    <!-- bootstrap div below -->
+    <main class="main">  
+      <div class="col-2  container-fluid">      
         <div class="sidebar">
             <nav>                  
                 <h2 id="menu">Menu</h2>                    
@@ -32,8 +35,10 @@
                     </ul>                    
             </nav>
         </div>    
-
+    </div> 
         <!-- main body content goes here -->
+        <!-- bootstrap div below -->
+     <div class="col-10 container-fluid"> 
         <div class="contents">
                 <h2 id="education">Education</h2>
             
@@ -93,12 +98,16 @@
                     <img src="./Images/alternateimage.jpeg" alt="Background Image of Me">
                 </picture>
             </div>          
-        </div>       
+        </div> 
+    </div>          
     </main>
     
+
+
         <!-- footer details here  -->
 
-    <footer class="footer">
+    <footer class="mx-sm-2 footer">
+        <div class="container">
         <h3>Contact Details</h3>
         <ul class="icons">
             <a href="http://linkedin.com" target="_blank">
@@ -112,6 +121,14 @@
             </a>
         </ul>
         <p>&copy Designed & Developed by Gareth Williams 2022</p>
+    </div>
     </footer>
 </body>
+
+<!-- Javascript for Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </html>
